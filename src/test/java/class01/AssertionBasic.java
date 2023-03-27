@@ -24,6 +24,7 @@ public class AssertionBasic {
     }
     @AfterMethod
     public void closeBrowser(){
+
         driver.quit();
     }
 
@@ -40,7 +41,7 @@ public class AssertionBasic {
 //        locate login button and click login
         WebElement loginBtn = driver.findElement(By.xpath("//input[@name='Submit']"));
         loginBtn.click();
-//verify the error message
+//verify the error message∂
         WebElement error = driver.findElement(By.xpath("//span[@id='spanMessage']"));
         String errorMsg = error.getText();
 //        check if the error message is correct
